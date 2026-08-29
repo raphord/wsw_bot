@@ -1,6 +1,7 @@
 {
     "a": {
-        "http://coffeecat.wsw.local/": 8
+        "http://coffeecat.wsw.local/": 8,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "adoptable": {
         "http://coffeecat.wsw.local/": 1
@@ -8,8 +9,12 @@
     "afternoons": {
         "http://coffeecat.wsw.local/": 1
     },
+    "all": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "and": {
-        "http://coffeecat.wsw.local/": 7
+        "http://coffeecat.wsw.local/": 7,
+        "http://coffeecat.wsw.local/menu.html": 4
     },
     "around": {
         "http://coffeecat.wsw.local/": 1
@@ -18,7 +23,14 @@
         "http://coffeecat.wsw.local/": 1
     },
     "bakery": {
-        "http://coffeecat.wsw.local/": 1
+        "http://coffeecat.wsw.local/": 1,
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "bar": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "bean": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "benches": {
         "http://coffeecat.wsw.local/": 1
@@ -28,6 +40,9 @@
     },
     "between": {
         "http://coffeecat.wsw.local/": 1
+    },
+    "bowl": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "break": {
         "http://coffeecat.wsw.local/": 1
@@ -39,10 +54,12 @@
         "http://coffeecat.wsw.local/": 1
     },
     "butter": {
-        "http://coffeecat.wsw.local/": 2
+        "http://coffeecat.wsw.local/": 2,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "cafe": {
-        "http://coffeecat.wsw.local/": 4
+        "http://coffeecat.wsw.local/": 4,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "calm": {
         "http://coffeecat.wsw.local/": 2
@@ -50,23 +67,44 @@
     "can": {
         "http://coffeecat.wsw.local/": 1
     },
+    "cappuccino": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "cardamom": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "cat": {
-        "http://coffeecat.wsw.local/": 7
+        "http://coffeecat.wsw.local/": 7,
+        "http://coffeecat.wsw.local/menu.html": 5
     },
     "cats": {
         "http://coffeecat.wsw.local/": 4
     },
+    "chamomile": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "chocolate": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "choices": {
         "http://coffeecat.wsw.local/": 1
+    },
+    "cinnamon": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "citrus": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "clean": {
         "http://coffeecat.wsw.local/": 1
     },
     "cloud": {
-        "http://coffeecat.wsw.local/": 1
+        "http://coffeecat.wsw.local/": 1,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "coffee": {
-        "http://coffeecat.wsw.local/": 4
+        "http://coffeecat.wsw.local/": 4,
+        "http://coffeecat.wsw.local/menu.html": 4
     },
     "company": {
         "http://coffeecat.wsw.local/": 1
@@ -77,11 +115,23 @@
     "contains": {
         "http://coffeecat.wsw.local/newmenu.html": 1
     },
+    "cookie": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "corners": {
         "http://coffeecat.wsw.local/": 1
     },
+    "croissant": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "cup": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "cut": {
         "http://coffeecat.wsw.local/": 1
+    },
+    "day": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "designed": {
         "http://coffeecat.wsw.local/": 1
@@ -90,13 +140,18 @@
         "http://coffeecat.wsw.local/newmenu.html": 1
     },
     "drinks": {
-        "http://coffeecat.wsw.local/": 2
+        "http://coffeecat.wsw.local/": 2,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "easy": {
         "http://coffeecat.wsw.local/": 2
     },
+    "egg": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "espresso": {
-        "http://coffeecat.wsw.local/": 2
+        "http://coffeecat.wsw.local/": 2,
+        "http://coffeecat.wsw.local/menu.html": 2
     },
     "favorites": {
         "http://coffeecat.wsw.local/": 1
@@ -113,17 +168,34 @@
     "finish": {
         "http://coffeecat.wsw.local/": 1
     },
+    "flat": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "flavors": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "for": {
-        "http://coffeecat.wsw.local/": 4
+        "http://coffeecat.wsw.local/": 4,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "friendly": {
         "http://coffeecat.wsw.local/": 1
+    },
+    "fruit": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "full": {
         "http://coffeecat.wsw.local/": 1
     },
     "garden": {
-        "http://coffeecat.wsw.local/": 1
+        "http://coffeecat.wsw.local/": 1,
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "general": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "green": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "guests": {
         "http://coffeecat.wsw.local/": 1
@@ -132,13 +204,24 @@
         "http://coffeecat.wsw.local/": 1
     },
     "home": {
-        "http://coffeecat.wsw.local/": 1
+        "http://coffeecat.wsw.local/": 1,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "honey": {
-        "http://coffeecat.wsw.local/": 2
+        "http://coffeecat.wsw.local/": 2,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "hour": {
         "http://coffeecat.wsw.local/": 1
+    },
+    "house": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "iced": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "ingredients": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "inside": {
         "http://coffeecat.wsw.local/": 1
@@ -152,14 +235,19 @@
     "jam": {
         "http://coffeecat.wsw.local/": 1
     },
+    "jasmine": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "just": {
         "http://coffeecat.wsw.local/newmenu.html": 1
     },
     "latte": {
-        "http://coffeecat.wsw.local/": 1
+        "http://coffeecat.wsw.local/": 1,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "light": {
-        "http://coffeecat.wsw.local/": 1
+        "http://coffeecat.wsw.local/": 1,
+        "http://coffeecat.wsw.local/menu.html": 2
     },
     "longer": {
         "http://coffeecat.wsw.local/": 1
@@ -174,13 +262,15 @@
         "http://coffeecat.wsw.local/": 1
     },
     "matcha": {
-        "http://coffeecat.wsw.local/": 2
+        "http://coffeecat.wsw.local/": 2,
+        "http://coffeecat.wsw.local/menu.html": 2
     },
     "memorable": {
         "http://coffeecat.wsw.local/": 1
     },
     "menu": {
         "http://coffeecat.wsw.local/": 5,
+        "http://coffeecat.wsw.local/menu.html": 5,
         "http://coffeecat.wsw.local/newmenu.html": 1
     },
     "milk": {
@@ -189,8 +279,17 @@
     "minimal": {
         "http://coffeecat.wsw.local/": 1
     },
+    "mint": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "more": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "mornings": {
         "http://coffeecat.wsw.local/": 1
+    },
+    "mushroom": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "natural": {
         "http://coffeecat.wsw.local/": 1
@@ -207,21 +306,37 @@
     "of": {
         "http://coffeecat.wsw.local/": 1
     },
+    "one": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "or": {
         "http://coffeecat.wsw.local/": 1
+    },
+    "orange": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "our": {
         "http://coffeecat.wsw.local/": 1,
         "http://coffeecat.wsw.local/newmenu.html": 1
     },
+    "paw": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "plates": {
-        "http://coffeecat.wsw.local/": 1
+        "http://coffeecat.wsw.local/": 1,
+        "http://coffeecat.wsw.local/menu.html": 2
     },
     "plenty": {
         "http://coffeecat.wsw.local/": 1
     },
     "points": {
         "http://coffeecat.wsw.local/": 1
+    },
+    "pot": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "pricing": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "quick": {
         "http://coffeecat.wsw.local/": 1
@@ -235,11 +350,27 @@
     "resident": {
         "http://coffeecat.wsw.local/": 1
     },
+    "ricotta": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "roasted": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "roll": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "room": {
-        "http://coffeecat.wsw.local/": 3
+        "http://coffeecat.wsw.local/": 3,
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "salad": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "same": {
         "http://coffeecat.wsw.local/": 1
+    },
+    "scone": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "seating": {
         "http://coffeecat.wsw.local/": 1
@@ -257,10 +388,12 @@
         "http://coffeecat.wsw.local/": 1
     },
     "short": {
-        "http://coffeecat.wsw.local/": 1
+        "http://coffeecat.wsw.local/": 1,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "simple": {
-        "http://coffeecat.wsw.local/": 1
+        "http://coffeecat.wsw.local/": 1,
+        "http://coffeecat.wsw.local/menu.html": 2
     },
     "site": {
         "http://coffeecat.wsw.local/": 1
@@ -272,7 +405,8 @@
         "http://coffeecat.wsw.local/": 2
     },
     "soft": {
-        "http://coffeecat.wsw.local/": 2
+        "http://coffeecat.wsw.local/": 2,
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "space": {
         "http://coffeecat.wsw.local/": 1
@@ -295,8 +429,12 @@
     "tables": {
         "http://coffeecat.wsw.local/": 1
     },
+    "tartine": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "tea": {
-        "http://coffeecat.wsw.local/": 1
+        "http://coffeecat.wsw.local/": 1,
+        "http://coffeecat.wsw.local/menu.html": 4
     },
     "textures": {
         "http://coffeecat.wsw.local/": 1
@@ -314,7 +452,14 @@
         "http://coffeecat.wsw.local/": 1
     },
     "toast": {
-        "http://coffeecat.wsw.local/": 2
+        "http://coffeecat.wsw.local/": 2,
+        "http://coffeecat.wsw.local/menu.html": 2
+    },
+    "tomato": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "vanilla": {
+        "http://coffeecat.wsw.local/menu.html": 1
     },
     "visit": {
         "http://coffeecat.wsw.local/": 1
@@ -334,10 +479,17 @@
     "whipped": {
         "http://coffeecat.wsw.local/": 1
     },
+    "white": {
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
     "window": {
         "http://coffeecat.wsw.local/": 1
     },
     "with": {
-        "http://coffeecat.wsw.local/": 3
+        "http://coffeecat.wsw.local/": 3,
+        "http://coffeecat.wsw.local/menu.html": 1
+    },
+    "yogurt": {
+        "http://coffeecat.wsw.local/menu.html": 1
     }
 }

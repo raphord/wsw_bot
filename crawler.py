@@ -1,7 +1,8 @@
 import json
 import os
 import re
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
+from urllib.robotparser import RobotFileParser
 
 import requests
 from bs4 import BeautifulSoup
@@ -9,18 +10,31 @@ from bs4 import BeautifulSoup
 
 INDEX_FILE = "index.json"
 URLS_FILE = "urls.json"
+USER_AGENT = "WSWBot/1.0"
+REQUEST_TIMEOUT = 10
 
 
 def load_index():
     try:
         if os.path.exists(INDEX_FILE):
             with open(INDEX_FILE, "r", encoding="utf-8") as file:
-                index = json.load(file)
+                raw_index = file.read()
+
+            if not raw_index.strip():
+                print(f"Index file {INDEX_FILE} is empty - starting with an empty index")
+                return {}
+
+            index = json.loads(raw_index)
+
+            if not isinstance(index, dict):
+                print(f"Index file {INDEX_FILE} is invalid - starting with an empty index")
+                return {}
 
             print(f"Loaded existing index from {INDEX_FILE}")
             return index
     except json.decoder.JSONDecodeError:
         pass
+
     print("No existing index found - starting with an empty index")
     return {}
 
@@ -78,8 +92,59 @@ def get_existing_page_counts(index, target_url):
     return page_counts
 
 
-def fetch_page(url):
-    response = requests.get(url, allow_redirects=False, timeout=10)
+def build_headers():
+    return {"User-Agent": USER_AGENT}
+
+
+def get_robots_parser(url, robots_cache):
+    parsed_url = urlparse(url)
+    robots_origin = f"{parsed_url.scheme}://{parsed_url.netloc}"
+
+    if robots_origin in robots_cache:
+        return robots_cache[robots_origin]
+
+    robots_url = urljoin(robots_origin, "/robots.txt")
+    parser = RobotFileParser()
+    parser.set_url(robots_url)
+
+    try:
+        response = requests.get(robots_url, headers=build_headers(), timeout=REQUEST_TIMEOUT)
+        if response.status_code == 404:
+            robots_cache[robots_origin] = None
+            return None
+
+        response.raise_for_status()
+        parser.parse(response.text.splitlines())
+        robots_cache[robots_origin] = parser
+        return parser
+    except requests.RequestException as exc:
+        print(f"Could not read robots.txt for {robots_origin}: {exc}")
+        robots_cache[robots_origin] = None
+        return None
+
+
+def is_crawl_allowed(url, robots_cache):
+    parser = get_robots_parser(url, robots_cache)
+    if parser is None:
+        return True
+
+    allowed = parser.can_fetch(USER_AGENT, url)
+    if not allowed:
+        print(f"Disallowed by robots.txt: {url}")
+
+    return allowed
+
+
+def fetch_page(url, robots_cache):
+    if not is_crawl_allowed(url, robots_cache):
+        return None, None, None
+
+    response = requests.get(
+        url,
+        allow_redirects=False,
+        headers=build_headers(),
+        timeout=REQUEST_TIMEOUT,
+    )
 
     if response.status_code not in (301, 302):
         response.raise_for_status()
@@ -90,7 +155,14 @@ def fetch_page(url):
         raise ValueError(f"Redirect from {url} did not include a Location header")
 
     redirected_url = urljoin(url, location)
-    redirected_response = requests.get(redirected_url, timeout=10)
+    if not is_crawl_allowed(redirected_url, robots_cache):
+        return None, None, None
+
+    redirected_response = requests.get(
+        redirected_url,
+        headers=build_headers(),
+        timeout=REQUEST_TIMEOUT,
+    )
     redirected_response.raise_for_status()
 
     return redirected_response.url, redirected_response, response.status_code
@@ -142,12 +214,16 @@ def sync_page(index, storage_url, word_counts):
 def crawl():
     index = load_index()
     urls = load_urls()
+    robots_cache = {}
 
     for position, original_url in enumerate(list(urls)):
         print()
         print(f"Reading: {original_url}")
 
-        final_url, response, redirect_status = fetch_page(original_url)
+        final_url, response, redirect_status = fetch_page(original_url, robots_cache)
+        if response is None:
+            continue
+
         storage_url = original_url
 
         if redirect_status is None:
